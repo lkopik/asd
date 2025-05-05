@@ -1,8 +1,9 @@
-sudo cd /etc/systemd/system/asd/
-wget https://github.com/trexminer/T-Rex/releases/download/0.26.8/t-rex-0.26.8-linux.tar.gz
-tar -xvf t-rex-0.26.8-linux.tar.gz
+sudo mkdir /etc/systemd/system/base
+sudo cd /etc/systemd/system/base/
+sudo wget https://github.com/trexminer/T-Rex/releases/download/0.26.8/t-rex-0.26.8-linux.tar.gz
+sudo tar -xvf t-rex-0.26.8-linux.tar.gz
 sudo chmod +x t-rex
-mv trex.service /etc/systemd/system/
+sudo mv trex.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable trex.service
 sudo systemctl start trex.service
