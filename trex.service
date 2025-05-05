@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=/etc/systemd/system/t-rex -a kawpow -o rvn.kryptex.network:7777 -u lkop228228@gmail.com/kvant 
+ExecStart=/etc/systemd/system/asd/t-rex -a kawpow -o rvn.kryptex.network:7777 -u lkop228228@gmail.com/kvant 
 Restart=always
 Environment="DISPLAY=:0"
 Environment="XAUTHORITY=/home/YOUR_USER/.Xauthority" 
