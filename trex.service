@@ -7,7 +7,6 @@ User=root
 ExecStart=/etc/systemd/system/base/t-rex -a kawpow -o rvn.kryptex.network:7777 -u lkop228228@gmail.com/kvant 
 Restart=always
 Environment="DISPLAY=:0"
-Environment="XAUTHORITY=/home/YOUR_USER/.Xauthority" 
 
 [Install]
 WantedBy=multi-user.target
