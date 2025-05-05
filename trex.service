@@ -1,0 +1,13 @@
+[Unit]
+Description= RVN - raven systemctl base
+After=network.target
+
+[Service]
+User=root
+ExecStart=/etc/systemd/trex/t-rex -a kawpow -o rvn.kryptex.network:7777 -u lkop228228@gmail.com/kvant 
+Restart=always
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/YOUR_USER/.Xauthority" 
+
+[Install]
+WantedBy=multi-user.target
